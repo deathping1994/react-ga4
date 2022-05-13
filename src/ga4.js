@@ -93,9 +93,9 @@ export class GA4 {
       }
       document.body.appendChild(script);
 
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayerGa4 = window.dataLayerGa4 || [];
       window.gtag = function gtag() {
-        window.dataLayer.push(arguments);
+        window.dataLayerGa4.push(arguments);
       };
 
       this._hasLoadedGA = true;
